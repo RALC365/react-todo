@@ -1,14 +1,12 @@
 import IconMoon from "./IconMoon";
 import IconSun from "./IconSun";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Header = () => {
 
     const [darkMode, setDarkMode] = useState(false);
 
     useEffect(() => {
-        console.log("Use effect")
-
         if(darkMode) {
             document.documentElement.classList.add('dark')
         }else {
